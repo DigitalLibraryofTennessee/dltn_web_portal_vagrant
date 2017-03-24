@@ -15,6 +15,8 @@ else
     echo "Updating DLTN Web Portal"
     cd dltn_web_portal
     git pull origin master
+    echo "Enabling virtual environment."
+    source /home/vagrant/.dltn_env/bin/activate
     echo "Updating required packages"
     pip install -r requirements.txt
 fi
